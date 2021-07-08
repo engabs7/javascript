@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgb(52, 152, 219);
+}
+
+.row .navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar .row .collapse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+
+.collapse .dropdown-menu {
+    background-color: rgb(244, 208, 63);
+}
+
+.my-image img {
+    height: 400px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.info>div {
+    padding: 20px;
+}
+
+
+.myCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.in1 {
+    position: absolute;
+    background-color: rgb(104, 104, 104);
+    height: 0px;
+    width: 500px;
+    transition: all .3s ease;
+}
+
+.in2 {
+    position: absolute;
+    bottom: 100px;
+    visibility: hidden;
+    transition: all .1s ease;
+}
+
+.in2 p {
+    font-size: 25px;
+    color: ghostwhite;
+}
+
+.op-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation>div {
+    padding: 20px;
+}
+
+.mode {
+    position: relative;
+    right: 40px;
+    bottom: 10px;
+}
+
+.light {
+    position: absolute;
+    visibility: hidden;
+}
+
+.dark {
+    position: absolute;
+}
+
+.light .fas {
+    color: gold;
+}
+
+.dark .fas {
+    color: ivory;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+.head .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.head .row>div {
+    padding: 70px;
+    margin: 0;
+}
+
+.arrow {
+    visibility: hidden;
+}

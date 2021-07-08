@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Web</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="navBar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="mode">
+                <div class="dark">
+                  <a href="#">
+                    <i class="fas fa-moon" id="moon" onclick="dark()"></i>
+                  </a>
+                </div>
+                <div>
+                  <div class="light">
+                    <a href="#">
+                      <i class="fas fa-sun" id="sun" onclick="light()"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="head">
+    <div class="container-fluid">
+      <div class="row" id="main">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <!-- Card -->
+          <div class="card myCard">
+            <!-- Card image -->
+            <div class="view overlay my-image">
+              <img class="card-img-top" src="/img/myimages/pic1.jpg" alt="Card image cap">
+            </div>
+            <!-- Card content -->
+            <div>
+              <a class="btn btn-primary" onclick="animation1()">ABOUT ME</a>
+            </div>
+            <div class="in1" id="in1">
+              <div class="arrow">
+                <a onclick="hide()">
+                  <i class="fas fa-angle-double-up" id="arrow"></i>
+                </a>
+              </div>
+            </div>
+            <div class="in2" id="in2">
+              <p id="in2-text">Name : Abbas Mohammed<br>
+                Age: 31<br>
+                Country: Iraq
+              </p>
+            </div>
+          </div>
+          <!-- Card -->
+
+        </div>
+        <div class="operation col-lg-7 col-md-12 col-sm-12">
+          <div>
+            <!-- Default input -->
+            <label for="" id="f">First Number</label>
+            <input type="text" id="first" class="form-control">
+          </div>
+          <div>
+            <!-- Default input -->
+            <label for="" id="s">Second Number</label>
+            <input type="text" id="second" class="form-control">
+          </div>
+          <div class="op-buttons">
+            <div>
+              <a class="btn btn-primary" onclick="add()">Add</a>
+            </div>
+            <div>
+              <a class="btn btn-primary" onclick="sub()">Sub</a>
+            </div>
+            <div>
+              <a class="btn btn-primary" onclick="mul()">Mul</a>
+            </div>
+            <div>
+              <a class="btn btn-primary" onclick="div()">Div</a>
+            </div>
+            <div>
+              <a class="btn btn-primary" onclick="avg()">Average</a>
+            </div>
+          </div>
+          <div style="border: solid 3px rgb(0, 102, 255);">
+            <h2 id="res">
+              Result
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/myjs.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+      Clipboard_CopyTo("T9TTVSQB");
+      var div = document.getElementById('code-success');
+      div.style.display = 'block';
+      setTimeout(function () {
+        document.getElementById('code-success').style.display = 'none';
+      }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+      var tempInput = document.createElement("input");
+      tempInput.value = value;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+    }
+  </script>
+</body>
+
+</html>
